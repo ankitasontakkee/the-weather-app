@@ -15,46 +15,69 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <form id="search-form">
-        <div class="row">
-          <div class="col-6">
-            <input
-              id="city-input"
-              type="search"
-              placeholder="Enter city"
-              autofocus="on"
-              autocomplete="on"
-              class="form-control"
-            />
+    <div class="app">
+      <div class="container main">
+        <h1><div class="head">Weather-Check</div></h1>
+        <br /><br /><br />
+
+        <form id="search-form">
+          <div class="row form">
+            <div class="col-6">
+              <input
+                id="city-input"
+                type="search"
+                placeholder="Enter city"
+                autofocus="on"
+                autocomplete="on"
+                class="form-control"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="search" class="form-control" />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
           </div>
-          <div class="col-3">
-            <input type="submit" value="search" class="form-control" />
-          </div>
-          <div class="col-3">
-            <button class="btn btn-success w-100" id="current-location-button">
-              Current
-            </button>
+        </form>
+        <div class="container one">
+          <div class="row one">
+            <div class="col-9">
+              <div id="city" class="city">Dublin City, Ireland</div>
+              <span id="temperature" class="temperature">20</span>
+
+              <span>
+                <a href="#" id="celsius-link">°C </a> |
+                <a href="#" id="fahrenheit-link">°F </a></span
+              >
+
+              <h2>
+                <div id="date">Thurday 06 Jan 1:38 am</div>
+              </h2>
+            </div>
+            <div class="col-3">
+              <div id="description" class="description">Cloudy</div>
+            </div>
           </div>
         </div>
-      </form>
-      <h1 id="city">Dublin City, Ireland</h1>
-      <span id="temperature" class="temperature"></span>
-      <span class="celsius">°C</span>
-
-      <div id="description" class="description">Cloudy</div>
-
-      <h2>
-        <div id="date">Thurday 06 Jan 1:38 am</div>
-      </h2>
-
-      <br />
-      <span class="feelsLike">Feels like:</span><span id="feelsLike"></span
-      ><span>°C</span><br />
-      <span class="humidity"> Humidity:</span><span id="humidity"></span
-      ><span class="pc">%</span> <br />
-      <span class="wind-speed">Wind Speed:</span><span id="wind"></span
-      ><span class="wind">km/hr</span>
+        <div class="container two">
+          <div class="row">
+            <div class="col-6">
+              <span class="feelsLike">Feels like:</span
+              ><span id="feelsLike"></span><span>°C</span><br />
+              <span class="humidity"> Humidity:</span><span id="humidity"></span
+              ><span class="pc">%</span> <br />
+              <span class="wind-speed">Wind Speed:</span><span id="wind"></span
+              ><span class="wind">km/hr</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 
