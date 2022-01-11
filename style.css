@@ -53,3 +53,12 @@ h1 {
 .description {
   font-size: 35px;
 }
+
+.active {
+  color: black;
+}
+.active:hover {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
