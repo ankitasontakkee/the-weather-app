@@ -4,6 +4,8 @@ body {
   height: 600px;
   justify-content: center;
   background-color: rgb(77, 142, 161);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -25,7 +27,7 @@ a {
   text-align: center;
   padding: 10px 50px;
   background: #baadad;
-  border-radius: 0 20px;
+  border-radius: 20px 20px;
   width: 100%;
   max-width: 700px;
   margin-top: 10px;
@@ -34,10 +36,11 @@ a {
   font-size: 40px;
 }
 .form.row {
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
 h1 {
-  font-weight: bold;
+  padding-top: 30px;
+  color: #0664a3;
 }
 h2 {
   font-size: 27px;
@@ -72,6 +75,11 @@ h2 {
 .sourcecode {
   color: #baadad;
 }
-.col-6.part-1 {
-  font-weight: 100px;
+.left.col-6 {
+  text-align: left;
+}
+
+.day.col-6 {
+  padding-left: 100px;
+  padding-top: 10px;
 }

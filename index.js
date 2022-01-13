@@ -27,6 +27,36 @@ let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+   
+      <div class="row">
+        <div class="col-6 weather-forecast-date">${day}</div> 
+        <div class="col-6">
+          <img
+            class="imgposition"
+            src="http://openweathermap.org/img/wn/04d@2x.png"
+            alt=""
+            width="50px"
+          />
+          <span class="weather-forecast-temperatures">10°C</span>
+        </div>
+      </div>
+    `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -64,6 +94,7 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 searchCity("Tokyo");
+displayForecast();
 
 function searchLocation(position) {
   let apiKey = "ca4c9af5b60a5caa3477f8840dc47ee6";
