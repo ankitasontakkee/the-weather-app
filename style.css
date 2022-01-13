@@ -7,6 +7,10 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.app {
+  width: 100%;
+  max-width: 100%;
+}
 
 a {
   text-decoration: none;
@@ -24,8 +28,9 @@ a {
   padding: 30px;
 }
 .two.container {
-  text-align: center;
-  padding: 10px 50px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 0;
   background: #baadad;
   border-radius: 20px 20px;
   width: 100%;
@@ -75,11 +80,24 @@ h2 {
 .sourcecode {
   color: #baadad;
 }
-.left.col-6 {
-  text-align: left;
+.left.col-4 {
+  padding: 50px 0px 0px 40px;
+  line-height: 30px;
 }
 
 .day.col-6 {
   padding-left: 100px;
   padding-top: 10px;
+}
+.weather-forecast-day.col-6 {
+  padding-top: 10px;
+  padding-left: 110px;
+  line-height: 10px;
+}
+.weather-forecast-temperatures.col-6 {
+  padding-left: 0px;
+  justify-content: center;
+}
+.right.col-8 {
+  padding-left: 80px;
 }
