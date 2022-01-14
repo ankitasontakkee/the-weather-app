@@ -1,11 +1,9 @@
 body {
-  display: flex;
-  align-items: center;
-  height: 600px;
-  justify-content: center;
-  background-color: rgb(77, 142, 161);
+  height: 800px;
+  background: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
 }
 .app {
   width: 100%;
@@ -22,7 +20,11 @@ a {
   width: 700px;
 }
 .one.container {
-  background: #baadad;
+  background: radial-gradient(
+    919px at 1.7% 6.1%,
+    rgb(41, 58, 76) 0%,
+    rgb(40, 171, 226) 100.2%
+  );
   border-radius: 20px 20px;
   width: 100%;
   padding: 30px;
@@ -31,7 +33,11 @@ a {
   padding-left: 20px;
   padding-top: 20px;
   padding-right: 0;
-  background: #baadad;
+  background: radial-gradient(
+    919px at 1.7% 6.1%,
+    rgb(41, 58, 76) 0%,
+    rgb(40, 171, 226) 100.2%
+  );
   border-radius: 20px 20px;
   width: 100%;
   max-width: 700px;
@@ -45,7 +51,7 @@ a {
 }
 h1 {
   padding-top: 30px;
-  color: #0664a3;
+  color: #293a4d;
 }
 h2 {
   font-size: 27px;
@@ -78,7 +84,7 @@ h2 {
   text-align: right;
 }
 .sourcecode {
-  color: #baadad;
+  color: #293a4d;
 }
 .left.col-4 {
   padding: 50px 0px 0px 40px;
