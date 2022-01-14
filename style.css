@@ -13,6 +13,9 @@ body {
 a {
   text-decoration: none;
 }
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
 .btn-success {
   background-color: #296889;
   border-color: #3388b4;
