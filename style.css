@@ -3,7 +3,7 @@ body {
   background: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
+  color: #f2f2f1;
 }
 .app {
   width: 100%;
@@ -12,6 +12,14 @@ body {
 
 a {
   text-decoration: none;
+}
+.btn-success {
+  background-color: #296889;
+  border-color: #3388b4;
+}
+.btn-success:hover {
+  background-color: #3388b4;
+  border-color: white;
 }
 .main.container {
   align-items: center;
@@ -53,6 +61,7 @@ h1 {
   padding-top: 30px;
   color: #293a4d;
 }
+
 h2 {
   font-size: 27px;
 }
@@ -86,6 +95,10 @@ h2 {
 .sourcecode {
   color: #293a4d;
 }
+.sourcecode:hover {
+  color: white;
+}
+
 .left.col-4 {
   padding: 50px 0px 0px 40px;
   line-height: 30px;
@@ -106,4 +119,10 @@ h2 {
 }
 .right.col-8 {
   padding-left: 80px;
+}
+.linkedin {
+  color: white;
+}
+.linkedin:hover {
+  color: #293a4d;
 }
