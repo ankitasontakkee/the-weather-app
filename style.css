@@ -39,6 +39,7 @@ a {
   border-radius: 20px 20px;
   width: 100%;
   padding: 30px;
+  box-shadow: 5px 10px 30px #293a4d;
 }
 .two.container {
   padding-left: 20px;
@@ -52,7 +53,8 @@ a {
   border-radius: 20px 20px;
   width: 100%;
   max-width: 700px;
-  margin-top: 10px;
+  margin-top: 25px;
+  box-shadow: 5px 10px 30px #293a4d;
 }
 .city {
   font-size: 40px;
